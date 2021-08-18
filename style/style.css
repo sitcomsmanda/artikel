@@ -72,7 +72,7 @@ span {
 
 .content p {
 	font-size: 1em;
-	padding: 4px 0;
+	padding: 4px 16px 4px 0;
 }
 
 .image {
@@ -130,4 +130,59 @@ footer {
 	text-align: center;
 	color: white;
 	padding: 16px;
+}
+
+
+
+
+
+
+@media (max-width: 1080px) {
+	.container {
+		width: 85vw;
+	}
+
+	.banner {
+		width: 85vw;
+	}
+}
+
+@media (max-width: 896px) {
+	.container {
+		width: 90vw;
+	}
+
+	.banner {
+		width: 90vw;
+		height: 248px;
+	}
+}
+
+@media (max-width: 642px) {
+	.article {
+		flex-direction: column;
+		padding: 32px;
+	}
+
+	.content {
+		width: auto;
+	}
+	
+	.sub-content {
+		width: auto;
+		margin-top: 32px;
+	}
+	
+	html {
+		font-size: 20px;
+	}
+	
+	.sub-content p {
+		font-size: .9em;
+		text-align: justify;
+	}
+	
+	.image {
+		margin: 0 8px;
+	}
 }
